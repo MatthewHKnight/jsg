@@ -1,0 +1,26 @@
+Options -Multiviews
+
+RewriteEngine On
+RewriteBase /
+
+# Force search engines to use juststargazing.com
+#RewriteCond %{HTTP_HOST} !^144.217.160.26$
+#RewriteRule ^(.*) http://144.217.160.26$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^juststargazing\.com$
+RewriteRule ^(.*) http://juststargazing.com/$1 [R=301,L]
+
+# Specify search friendly URLs
+RewriteRule ^blog$ /blog.htm [L]
+RewriteRule ^galaxy-album$ /galaxy-album.htm [L]
+RewriteRule ^messier-album$ /messier-album.htm [L]
+RewriteRule ^moon-album$ /moon-album.htm [L]
+RewriteRule ^nebula-album$ /nebula-album.htm [L]
+RewriteRule ^planet-album$ /planet-album.htm [L]
+RewriteRule ^solar-album$ /solar-album.htm [L]
+# Info About site
+RewriteRule ^juststargazing-website-info$ /info.htm [L]
+# Blog pages start here
+RewriteRule ^pre-configured-icap-settings-for-neximage5$ /pre-configured-icap-settings-for-neximage5.htm [L]
+RewriteRule ^how-to-do-a-time-lapse-using-a-zwo-camera-and-sharpcap$ /how-to-do-a-time-lapse-using-a-zwo-camera-and-sharpcap.htm [L]
+# Generated for free at SearchFriendlyURLs.com
+
